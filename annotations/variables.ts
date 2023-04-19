@@ -1,3 +1,5 @@
+// we can delete all these annotations, and everything will work as before
+// this is called 'Type inference'
 let apples: number = 5;
 let speed: string = 'fast';
 let hadName: boolean = true;
@@ -22,4 +24,9 @@ let convertible: Car = new Car();
 let point: { x: number; y: number } = {
   x: 10,
   y: 20,
+};
+
+// Function
+const logNumber: (i: number) => void = (i) => {
+  console.log(i);
 };
