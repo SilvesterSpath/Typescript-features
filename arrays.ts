@@ -17,3 +17,9 @@ carMakers.push('mercedes');
 carMakers.map((item: string): string => {
   return item;
 });
+
+// Flexible types
+const importantDates = [new Date(), '2024-10-10'];
+const importantDates2: (Date | string)[] = [new Date()];
+importantDates.push('2030-10-10');
+importantDates.push(new Date());
