@@ -13,3 +13,12 @@ pepsi[0] = 'black';
 const sprite: Drink = ['clear', true, 40];
 
 const tea: Drink = ['brown', false, 0];
+
+// these numbers not tell too much
+const carSpecs: [number, number] = [400, 3354];
+
+// this is better
+const carStats = {
+  horsepower: 400,
+  weight: 3354,
+};
