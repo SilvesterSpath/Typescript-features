@@ -1,9 +1,9 @@
 // generic name for an interface
-interface Vehicle2 {
+interface Reportable {
   summary(): string;
 }
 
-const oldCivic2 = {
+const oldCivic3 = {
   name: 'civic',
   year: new Date(),
   broken: true,
@@ -12,8 +12,8 @@ const oldCivic2 = {
   },
 };
 
-const printVehicle2 = (vehicle: Vehicle2): void => {
-  console.log(vehicle.summary());
+const printSummary = (item: Reportable): void => {
+  console.log(item.summary());
 };
 
-printVehicle2(oldCivic2);
+printSummary(oldCivic3);
