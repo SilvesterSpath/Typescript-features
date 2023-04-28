@@ -18,7 +18,7 @@ const vehicle = new Vehicle3('orange');
 console.log(vehicle.color);
 
 // Inheritance (this is a child class)
-class Car3 extends Vehicle3 {
+/* class Car3 extends Vehicle3 {
   private drive(): void {
     console.log('vroom');
   }
@@ -32,4 +32,4 @@ class Car3 extends Vehicle3 {
 const car2 = new Car3();
 
 car2.startDrivingProcess();
-car2.startDrivingProcess();
+car2.startDrivingProcess(); */
