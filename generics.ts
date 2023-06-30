@@ -46,3 +46,36 @@ function printAnything<Type>(arr: Type[]): void {
 }
 
 printAnything<string>(['first', 'second', 'third']);
+
+// Generic Constraints
+
+class Car {
+  print() {
+    console.log('I am a car');
+  }
+}
+
+class House {
+  print() {
+    console.log('I am a house');
+  }
+}
+
+// interface for the function
+interface printable {
+  print(): void;
+}
+
+function printHousesOrCars<Type extends printable>(arr: Type[]): void {
+  for (const item of arr) {
+    item.print();
+  }
+}
+
+// this will not work
+/* printHousesOrCars([1, 2, 3]); */
+
+// this will work
+printHousesOrCars<Car>([new Car(), new Car()]);
+printHousesOrCars<House>([new House(), new House()]);
+printHousesOrCars<Car | House>([new House(), new Car(), new Car()]);
